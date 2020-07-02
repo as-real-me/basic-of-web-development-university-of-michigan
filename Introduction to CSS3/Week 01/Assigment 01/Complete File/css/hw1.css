@@ -1,0 +1,33 @@
+/* Header - BG color changed */
+header{
+    background: #eeeeee;
+}
+
+/* h1 - font color changed, centered the text, all capital letter  */
+h1{
+    color: #00adb5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* h2 - font color changed, all capital letter */
+h2{
+    color: #222831;
+    text-transform: uppercase;
+}
+
+/* section - BG color changed */
+section{
+    background: #00adb5;
+}
+
+/* Link - changed bg color, font color */
+a{
+    color:#eeeeee;
+    background: #393e46;
+}
+
+/* Image - romved from page using only css */
+img{
+    display: none;
+}

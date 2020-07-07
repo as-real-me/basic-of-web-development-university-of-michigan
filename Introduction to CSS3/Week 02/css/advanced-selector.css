@@ -1,0 +1,13 @@
+nav a{
+    background: #654062;
+    color: #ffffff;
+    display: inline-block;
+    width: 20%;
+    margin-right: 2%;
+    text-align: center;
+}
+.current{
+    background: #ff9c71;
+    color: #ffffff;
+    text-transform: uppercase;
+}

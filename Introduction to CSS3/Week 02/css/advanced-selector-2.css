@@ -1,0 +1,29 @@
+/* Match the beginning */
+a[href^='https://github.com']{
+    background: #222831;
+    color: #eeeeee;
+}
+
+/* Match the end adjactly */
+/* img[src$ = '.png']{
+    
+} */
+
+a[href$='.org/']{
+    background: #336d88;
+    color: #ffffff;
+}
+
+/* Wildcard - search in all */
+a[href*='uiu']{
+    background: #ff9234;
+    color:#ffffff;
+}
+
+li{
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitional Animation</title>
+    <style>
+        .one{
+            text-align: center;;
+            background: #99b898;
+            width: 50%;
+            margin: 5% auto;
+            color: #ffffff;
+            height: 100px;
+            line-height: 100px; /* Use the samvalue of height in line height that will make element vertically align center*/
+            border-radius: 10px;
+
+            transition-property: background, border-radius, width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+        }
+
+        .one:hover{
+            background: #e84a5f;
+            width: 70%;
+            border-radius: 50px;
+        }
+        .one:active{
+            /* Click and hold your mouse to see the transition effect for active */
+            background-color: #ff847c;
+            width: 30%;
+            border-radius: 5px;
+        }
+
+
+        /* Two */
+        .two{
+            text-align: center;;
+            background: #ffffff;
+            width: 50%;
+            margin: 5% auto;
+            color: #99b898;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 10px;
+            box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+            transform: scale(1.0);
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-oute;
+            transition-delay: 0.5s;
+        }
+
+        .two:hover{
+            transform: scale(1.11);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+        }
+
+        /* Three */
+        .three{
+            text-align: center;
+            background: #99b898;
+            color: #ffffff;
+            width: 50%;
+            margin: 5% auto;
+            height: 100px;
+            line-height: 100px; /* Same as height */
+            border-radius: 10px;
+
+            transition-property: all;
+            transition-duration: 1.0s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+        }
+        .three:hover{
+            transform: scale(0.8);
+        }
+
+        /* Four */
+        .four{
+            text-align: center;
+            background: #99b898;
+            color: #ffffff;
+            width: 50%;
+            margin: 5% auto;
+            height: 100px;
+            line-height: 100px; /* Same as height */
+            border-radius: 10px;
+
+            transition-property: all;
+            transition-duration: 1.0s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+        }
+
+        .four:hover{
+            transform: rotateZ(-20deg);
+        }
+
+        .five{
+            text-align: center;
+            background: #838383;
+            color: #ffffff;
+            width: 50%;
+            margin: 5% auto;
+            height: 100px;
+            line-height: 100px; /* Same as height */
+            border-radius: 10px;
+
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+        }
+
+        .five:hover{
+            background: #99b898;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1 class="one">Transition 01</h1>
+    <h1 class="two">Transition 02</h1>
+    <h1 class="three">Transition 03</h1>
+    <h1 class="four">Transition 04</h1>
+    <h1 class="five">Transition 05</h1>
+
+
+
+</div>
+</body>
+</html>

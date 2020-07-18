@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dfd3c3;
+}
+nav{
+    text-align: center;
+    background: #c7b198;
+    padding: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 20px;
+    /* margin: 0 auto; */
+    width: 20%;
+    background: #596e79;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+nav li:hover{
+    background: #204051;
+}
+
+nav li:hover ul{
+    display: block;
+}
+
+nav li ul li{
+    display: block;
+}
+/* Section */
+section{
+    width: 90%;
+    margin: 0 auto;
+    color: #596e79;
+}

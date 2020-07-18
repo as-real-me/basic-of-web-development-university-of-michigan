@@ -1,0 +1,109 @@
+/* Body */
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Header Part */
+header{
+    background-image: url("../images/flywheel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+nav{
+    text-align: center;
+}
+ nav a{
+     background: RGBA(255,255,255,0.5);
+     text-decoration: none;
+     color: #000000;
+     padding: 20px 80px;
+     border-radius: 5px;
+     margin: 5px 40px;
+     display: inline-block;
+ }
+
+ .active{
+     background: #142850;
+     font-weight: bold;
+     color: #dae1e7;
+ }
+
+ /* Left section */
+ .left{
+    width: 20%;
+    display: inline-block;
+    background: #00909e;
+ }
+
+ a img{
+     width: 80%;
+     border: 2px solid #dae1e7;
+     margin: 15% auto;
+     display: block;
+ }
+
+ /* Right */
+ .right{
+     width: 80%;
+     display: inline-block;
+     float: right;
+ }
+
+
+ /* Week 04 Style */
+ 
+ /* Table element */
+ /* four properties used to style table */
+ table{
+     margin: 0 auto;
+     width: 100%;
+     vertical-align: bottom;
+     padding-bottom: 10px;
+
+ }
+
+ /* Table heading - border-bottom, bg color & other*/
+ th{
+     background-color: #142850;
+     background-image: linear-gradient(45deg,#142850 , #27496d);
+     color: #ffffff;
+     padding: 15px 40px;
+     border-bottom: 4px solid #00909e;
+     border-radius: 5px 5px 0 0;
+     opacity: 1.0 !important;
+ }
+ .table-thead{
+     opacity: 1.0;
+ }
+
+ /* Row opacity set to 0.7 */
+ tr{
+     opacity: 0.7;
+ }
+/* Change opacity on hover over */
+ tr:hover{
+     opacity: 1.0;
+ }
+
+ /* First coloum alined left */
+  tr td:first-child, th:first-child{
+     text-align: left;
+     padding-left: 20px;
+ }
+ /* Other 2 coloum aligned center */
+ /* td styled using 4 properties */
+ td{
+     text-align: center;
+     background: #dae1e7;
+     padding: 6px 6px;
+     font-weight: normal;
+ }

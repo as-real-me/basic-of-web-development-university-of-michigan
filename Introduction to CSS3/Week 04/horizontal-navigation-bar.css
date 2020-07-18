@@ -1,0 +1,35 @@
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    background: #dfd3c3;
+}
+
+/* Nav */
+nav{
+    text-align: center;
+    padding: 2% 0;
+    background: #596e79;
+}
+
+nav a{
+    /* border: 1px solid turquoise; */
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #f0ece3;
+    background: #c7b198;
+    border-radius: 6px;
+    margin: 7px 2%;
+    display: inline-block;
+}
+
+.current{
+    background: #204051;
+}
+
+/* Section */
+section{
+    width: 90%;
+    margin: 0 auto;
+    color: #596e79;
+}

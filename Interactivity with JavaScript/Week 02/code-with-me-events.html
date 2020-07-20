@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code with me - Event</title>
+    <script src="code-with-me-events.js"></script>
     <style>
         
         button{
@@ -20,6 +21,15 @@
             border: 2px solid black;
             text-align: center;
         }
+
+        /* Close class */
+        .close{
+            display: none;
+        }
+        /* Open class */
+        .open{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -31,6 +41,13 @@
     <p>Don't change it</p>
     <p id="change">Change this one</p>
     <p>Don't change it</p>
+
+    <!-- 2 -->
+    <!-- Button -->
+    <button onclick="openFunc()">Open</button>
+    <button onclick="closeFunc()">Close</button>
+    <!-- Paragraph -->
+    <p id="hide-me">Extra text is here, I wannna play with it!</p>
 
     
 </body>

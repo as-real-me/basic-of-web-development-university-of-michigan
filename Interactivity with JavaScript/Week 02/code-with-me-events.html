@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with me - Event</title>
+    <style>
+        
+        button{
+            padding: 20px 40px;
+            background: black;
+            color: white;
+            border-radius: 4px;
+            font-size: medium;
+            border-style: none;
+        }
+        p{
+            padding: 10px 30px;
+            width: 20%;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change the text with button click</h1>
+    <!-- Buttons -->
+    <button onclick="document.getElementById('change').innerHTML = 'Changed on FIRST button click'">First Button</button>
+    <button onclick="document.getElementById('change').innerHTML = 'Changed on SECOND button click'">Second Button</button>
+    <!-- Paragraphs -->
+    <p>Don't change it</p>
+    <p id="change">Change this one</p>
+    <p>Don't change it</p>
+
+    
+</body>
+</html>

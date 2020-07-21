@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average with undefined number</title>
+    <script>
+        let grades = [80, 90, , , , 85, 73, 98, , 78]; // Array of grades with some undefined values
+        let sum = 0; // To sum up grades
+        let count = 0; // To count numbers of valid grades
+
+        if(grades.length > 0){
+            for (let i = 0; i < grades.length; i++){
+                if(grades[i] != undefined){
+                    sum += grades[i];
+                    count++;
+                }
+            }
+            document.write("Average is: " + sum/count);
+        }else{
+            document.write("Opps! Empty array.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

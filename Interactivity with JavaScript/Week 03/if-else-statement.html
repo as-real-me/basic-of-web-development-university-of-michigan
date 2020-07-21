@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let grades = [4, 3.25, 3.75, 3.0, 3.9];
+    let sum = 0;
+
+    // Calculating average grade
+    if(grades.length > 0){
+        for (let i = 0; i < grades.length; i++){
+            sum += grades[i];
+        }
+
+        document.write("Average of your grade is: " + sum / grades.length);
+    }else{
+        document.write("Opps! Your grade array is empty.");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>

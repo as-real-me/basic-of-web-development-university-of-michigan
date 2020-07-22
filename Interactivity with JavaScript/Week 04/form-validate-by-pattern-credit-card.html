@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card FORM validation using PATTERN</title>
+    <style>
+        body{
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+
+        }
+        label{
+            display: inline-block;
+            width: 20%;
+        }
+        input{
+            margin: 1% 0 1% 0;
+            padding: 10px;
+            width: 20%;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        ::placeholder{
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            color: gray;
+            font-size: 1.1em;
+        }
+        #submit-btn{
+            font-size: 1.1em;
+            background: black;
+            color: white;
+            width: 21.5%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="card-holder-name">Card holder name</label>
+        <input type="text" name="card-holder-name" id="card-holder-name" placeholder="Enter card holder name" required><br>
+        <label for="credit-card-number">Credit card number</label>
+        <input type="text" name="credit-card-number" id="credit-card-number" required pattern="[0-9]{13,16}" placeholder="Enter valid card number"><br>
+        <label for="submit-btn"></label>
+        <input type="submit" id="submit-btn" value="Submit">
+    </form>
+</body>
+</html>

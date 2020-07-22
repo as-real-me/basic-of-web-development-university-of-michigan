@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate two email address</title>
+    <style>
+        body{
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: inline-block;
+            width: 20%;
+            font-size: 1.3em;
+        }
+
+        input{
+            padding: 15px 10px;
+            width: 20%;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        #submit-btn{
+            background: black;
+            color: white;
+            font-size: 1.2em;
+            font-family: inherit;
+        }
+    </style>
+    <script>
+        function check(){
+            let email_one = document.getElementById("email-one");
+            let email_two = document.getElementById("email-two");
+
+            if(email_one.value != email_two.value){
+                alert("Two email must be same!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="email-one">Enter your email: </label>
+        <input type="email" name="email-one" id="email-one" required><br>
+        <label for="email-two">Enter the email agin: </label>
+        <input type="email" name="email-two" id="email-two"  onchange="check()" required><br>
+        <label for="submit-btn"></label>
+        <input type="submit" id="submit-btn" onclick="return check()" value="Submit">
+    </form>
+</body>
+</html>

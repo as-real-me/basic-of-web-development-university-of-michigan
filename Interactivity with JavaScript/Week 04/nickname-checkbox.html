@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you have nick name?</title>
+    <style>
+         body{
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: inline-block;
+            width: 10%;
+            font-size: 1.3em;
+        }
+
+        input{
+            padding: 15px 10px;
+            width: 20%;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        #submit-btn{
+            background: black;
+            color: white;
+            font-size: 1.2em;
+            font-family: inherit;
+        }
+        #nickNameDiv{
+            display: none;
+        }
+        #hasNickName{
+            /* display: inline-block; */
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        function nickNameFunc(){
+            if(document.getElementById('hasNickName').checked){
+                console.log("Inside!");
+                document.getElementById('nickNameDiv').style.display = "block";
+                document.getElementById('nickName').setAttribute('required', true);
+            }else{
+                document.getElementById('nickName').removeAttribute('required');
+                document.getElementById('nickNameDiv').style.display = "none";
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="fName">First name: </label>
+        <input type="text" name="fName" id="fName"><br>
+        <label for="lName">Last name: </label>
+        <input type="text" name="lName" id="lName"><br>
+        <label for="hasNickName">Nickname?</label>
+        <input type="checkbox" name="nickName" id="hasNickName" onchange="nickNameFunc()"><br>
+        <div id="nickNameDiv">
+            <label for="nickName">Nickname: </label>
+            <input type="text" name="nickName" id="nickName">
+        </div>
+        <label for="submit-btn"></label>
+        <input type="submit" id="submit-btn" value="Verify">
+
+    </form>
+</body>
+</html>
